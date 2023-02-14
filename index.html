@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+        <title>Kuis</title>
+    </head>
+    <body>
+        <div class="header bg-primary p-3">
+            <h3 class="text-light text-center">Kuis Online</h3>
+        </div>
+
+        <div class="container">
+            <label class="fs-5">Nama</label> <br />
+            <input class="form-control w-50" type="text" id="nama" /> <br />
+            <label class="fs-5">Nilai: </label>
+            <div id="nilai"></div>
+        </div>
+        <hr />
+
+        <div class="container">
+            <!-- soal pertama -->
+            <h3>I. Pilihan Ganda</h3>
+            <label>1. Satelit alami bumi adalah...</label> <br />
+            <input class="form-check-input" type="radio" name="pg1" /> Asteroid <br />
+            <input class="form-check-input" type="radio" name="pg1" id="jwbpg1" /> Bulan <br />
+            <input class="form-check-input" type="radio" name="pg1" /> Matahari <br />
+            <input class="form-check-input" type="radio" name="pg1" /> Komet <br />
+            <input class="form-check-input" type="radio" name="pg1" /> Mars <br />
+            <div id="responeno1"></div>
+            <br />
+
+            <!-- soal kedua -->
+            <label>2. Ibu kota Indonesia adalah...</label> <br />
+            <input class="form-check-input" type="radio" name="pg2" /> Bandung <br />
+            <input class="form-check-input" type="radio" name="pg2" /> Papua <br />
+            <input class="form-check-input" type="radio" name="pg2" /> Semarang <br />
+            <input class="form-check-input" type="radio" name="pg2" /> Balik Papan <br />
+            <input class="form-check-input" type="radio" name="pg2" id="jwbpg2" /> Jakarta <br />
+            <div id="responeno2"></div>
+
+            <br />
+            <!-- soal ke tiga -->
+            <label>3. Pada tanggal berapa Indonesia merdeka...</label> <br />
+            <input class="form-check-input" type="radio" name="pg3" id="jwbpg3" /> 17 Agustus 1945 <br />
+            <input class="form-check-input" type="radio" name="pg3" /> 18 Agustus 1966 <br />
+            <input class="form-check-input" type="radio" name="pg3" /> 19 Agustus 1946 <br />
+            <input class="form-check-input" type="radio" name="pg3" /> 17 September 1945 <br />
+            <input class="form-check-input" type="radio" name="pg3" /> 17 Agustus 1944 <br />
+            <div id="responeno3"></div>
+
+            <br />
+            <!-- soal ke empat -->
+            <label>4. Piala dunia sepak bola diselenggarakn setiap berapa tahun sekali...</label> <br />
+            <input class="form-check-input" type="radio" name="pg4" id="jwbpg4" /> 4 tahun <br />
+            <input class="form-check-input" type="radio" name="pg4" /> 2 tahun <br />
+            <input class="form-check-input" type="radio" name="pg4" /> 7 tahun <br />
+            <input class="form-check-input" type="radio" name="pg4" /> 5 tahun <br />
+            <input class="form-check-input" type="radio" name="pg4" /> 4.5 tahun <br />
+            <div id="responeno4"></div>
+
+            <br />
+            <!-- soal ke lima -->
+            <label>5. Lambang pancasila sila ke tiga...</label> <br />
+            <input class="form-check-input" type="radio" name="pg5" /> Bintang <br />
+            <input class="form-check-input" type="radio" name="pg5" /> Padi dan kapas <br />
+            <input class="form-check-input" type="radio" name="pg5" id="jwbpg5" /> Pohon beringin <br />
+            <input class="form-check-input" type="radio" name="pg5" /> Rantai <br />
+            <input class="form-check-input" type="radio" name="pg5" /> Kepala banteng <br />
+            <div id="responeno5"></div>
+
+            <br />
+            <!-- soal ke enam -->
+            <label>6. Ada berapa provinsi di Indonesia...</label> <br />
+            <input class="form-check-input" type="radio" name="pg6" id="jwbpg6"/> 38 <br />
+            <input class="form-check-input" type="radio" name="pg6" /> 37 <br />
+            <input class="form-check-input" type="radio" name="pg6" /> 33 <br />
+            <input class="form-check-input" type="radio" name="pg6" /> 36 <br />
+            <input class="form-check-input" type="radio" name="pg6"  /> 35 <br />
+            <div id="responeno6"></div>
+
+            <br />
+            <!-- soal ke tujuh -->
+            <label>7. Pada tanggal berapa perang dunia ke 2 terjadi...</label> <br />
+            <input class="form-check-input" type="radio" name="pg7" /> 1 September 1945 <br />
+            <input class="form-check-input" type="radio" name="pg7" /> 1 September 1938 <br />
+            <input class="form-check-input" type="radio" name="pg7" id="jwbpg7" /> 1 September 1939 <br />
+            <input class="form-check-input" type="radio" name="pg7" /> 1 September 1940 <br />
+            <input class="form-check-input" type="radio" name="pg7" /> 1 September 1937 <br />
+            <div id="responeno7"></div>
+
+            <br />
+            <!-- soal ke delapan -->
+            <label>8. Apa mata uang Filipina...</label> <br />
+            <input class="form-check-input" type="radio" name="pg8" /> Yen <br />
+            <input class="form-check-input" type="radio" name="pg8" id="jwbpg8" /> Peso <br />
+            <input class="form-check-input" type="radio" name="pg8" /> Bath <br />
+            <input class="form-check-input" type="radio" name="pg8" /> Euro <br />
+            <input class="form-check-input" type="radio" name="pg8" /> Rupee <br />
+            <div id="responeno8"></div>
+
+            <br />
+            <!-- soal ke sembilan -->
+            <label>9. Perang badar terjadi pada...</label> <br />
+            <input class="form-check-input" type="radio" name="pg9" id="jwbpg9"/> 17 Ramadan 2 H <br />
+            <input class="form-check-input" type="radio" name="pg9" /> 18 Ramadan 2 H <br />
+            <input class="form-check-input" type="radio" name="pg9" /> 7 Syawal 3 H <br />
+            <input class="form-check-input" type="radio" name="pg9"  /> 20 Ramadan 2 H <br />
+            <input class="form-check-input" type="radio" name="pg9" /> 21 Ramadan 2 H <br />
+            <div id="responeno9"></div>
+
+            <br />
+            <!-- soal ke sepuluh -->
+            <label>10. Siapakah Ibu Nabi Muhammad SAW...</label> <br />
+            <input class="form-check-input" type="radio" name="pg10" /> Zainab <br />
+            <input class="form-check-input" type="radio" name="pg10" /> Fatimah <br />
+            <input class="form-check-input" type="radio" name="pg10" /> Khodijah <br />
+            <input class="form-check-input" type="radio" name="pg10" /> Maryam <br />
+            <input class="form-check-input" type="radio" name="pg10" id="jwbpg10" /> Aminah binti Wahb <br />
+            <div id="responeno10"></div>
+
+            <br />
+            
+            <button class="btn btn-sm btn-primary mb-3" onclick="simpan()">Kirim</button>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
